@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#home {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+#home h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#home img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+#sobre {
+  padding: 50px;
+  background-color: #fafafa;
+}
+
+#sobre h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#projetos {
+  padding: 50px;
+  background-color: #fff;
+}
+
+#projetos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.projeto {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-10px);
+}
+
+.projeto h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projeto p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.projeto a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#contato {
+  padding: 50px;
+  background-color: #fafafa;
+}
+
+#contato h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contato p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato ul {
+  list-style: none;
+  text-align: center;
+}
+
+#contato ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#contato ul li a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projetos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .projeto {
+      width: 80%;
+  }
+}
